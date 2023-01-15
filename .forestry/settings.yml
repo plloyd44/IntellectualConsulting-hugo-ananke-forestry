@@ -25,9 +25,12 @@ sections:
   templates:
   - contact
 - type: document
+  path: content/pictures/*
+  label: Pictures
+  match: "**/*"
+- type: document
   path: content/links/*
   label: Links
-  match: "**/*"
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
