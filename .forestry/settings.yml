@@ -11,7 +11,7 @@ sections:
   match: "*"
 - type: directory
   path: content/post
-  label: Post
+  label: Schedule
   create: documents
   match: "*.md"
   exclude: _index.md
@@ -21,6 +21,12 @@ sections:
   path: content/about
   label: About
   create: all
+  match: "**/*"
+  templates:
+  - contact
+- type: document
+  path: content/links/*
+  label: Links
   match: "**/*"
 upload_dir: static/images
 public_path: "/images"
